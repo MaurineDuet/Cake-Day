@@ -1,0 +1,1798 @@
+/* Les polices */
+@font-face {
+    font-family: 'Lemon Days';
+    src: url(../Fonts/lemon_days/Lemon\ Days.otf)
+}
+
+@font-face {
+    font-family: 'MADE Evolve sans Regular';
+    src: url(../Fonts/made_evolve_sans/MADE\ Evolve\ Sans\ Regular.otf)
+}
+
+@font-face {
+    font-family: 'MADE Evolve sans Bold';
+    src: url(../Fonts/made_evolve_sans/MADE\ Evolve\ Sans\ Bold.otf)
+}
+
+@font-face {
+    font-family: 'MADE Evolve sans Medium';
+    src: url(../Fonts/made_evolve_sans/MADE\ Evolve\ Sans\ Medium.otf)
+}
+
+@font-face {
+    font-family: 'MADE Evolve sans Light';
+    src: url(../Fonts/made_evolve_sans/MADE\ Evolve\ Sans\ Light.otf)
+}
+
+
+
+/* HOME PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Le corps de la page */
+
+body {
+    background-color: var(--background);
+    font-family: 'MADE Evolve sans Bold';
+    color: var(--footer);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+body {
+    --button: #FF8585;
+    --header: #FD4859;
+    --footer: #1F0909;
+    --background: #FFE3DA;
+    --maincontent: #FFC7C1;
+    --border: #FEB5B3;
+    --textbackground: #ffff;
+    --asidecontent: #AF807B;  
+}
+
+body[theme="pink"] {
+    --button: #FF8585;
+    --header: #FD4859;
+    --footer: #1F0909;
+    --background: #FFE3DA;
+    --maincontent: #FFC7C1;
+    --border: #FEB5B3;
+    --textbackground: #ffff;
+    --asidecontent: #AF807B;  
+}
+
+body[theme="green"] {
+    --button: #ABFFDF;
+    --header: #9FD4BE;
+    --footer: #2C2822;
+    --background: #FFF1D6;
+    --maincontent: #D6FFEE;
+    --border: #9FD4BE;
+    --textbackground: #ffff;
+    --asidecontent: #726760;
+}
+
+body[theme="blue"] {
+    --button: #B1E5FB;
+    --header: #83BDE9;
+    --footer: #18120D;
+    --background: #FDF6EF;
+    --maincontent: #E6F1F3;
+    --border: #D8E5ED;
+    --textbackground: #ffff;
+    --asidecontent: #B19A80;
+}
+
+body[theme="lilac"] {
+    --button: #DAC1EC;
+    --header: #B57EDC;
+    --footer: #2F202D;
+    --background: #F8F3FA;
+    --maincontent: #E9DAF3;
+    --border: #D7B8EB;
+    --textbackground: #ffff;
+    --asidecontent: #98839A;
+}
+
+body[theme="white"] {
+    --button: #D5C0B3;
+    --header: #CD9169;
+    --footer: #312727;
+    --background: #FFFBF7;
+    --maincontent: #F2E9E3;
+    --border: #F0DBCC;
+    --textbackground: #ffff;
+    --asidecontent: #807574;
+}
+
+body[theme="orange"] {
+    --button: #F79862;
+    --header: #FF7353;
+    --footer: #1B120E;
+    --background: #FEDEBE;
+    --maincontent: #FCC9A2;
+    --border: #FEBE9E;
+    --textbackground: #ffff;
+    --asidecontent: #746154;
+}
+
+body[theme="yellow"] {
+    --button: #FFD699;
+    --header: #FFC266;
+    --footer: #2B2A29;
+    --background: #FFFAE6;
+    --maincontent: #FFEFCF;
+    --border: #FFEBC5;
+    --textbackground: #ffff;
+    --asidecontent: #736151;
+}
+
+body[theme="blossom"] {
+    --button: #F5A3C0;
+    --header: #F06C9B;
+    --footer: #2C1B27;
+    --background: #FFE3FA;
+    --maincontent: #FCD0E9;
+    --border: #FBBFDD;
+    --textbackground: #ffff;
+    --asidecontent: #725165;
+}
+
+body[theme="grey"] {
+
+    --button: #939393;
+    --header: #7B7676;
+    --footer: #1F1F1F;
+    --background: #F1F1F1;
+    --maincontent: #C6C6C6;
+    --border: #5E5E5E;
+    --textbackground: #ffff;
+    --asidecontent: #5E5E5E;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.container {
+    width: 880px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--header);
+    width: 100%;
+    padding: 20px 0;
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-family: 'Lemon Days';
+    color: var(--footer);
+    font-size: 2em;
+    
+    display: flex;
+    align-items: center;
+    
+    gap: 20px;
+    padding-left: 40px;
+    
+    text-decoration: none;
+    
+}
+
+.logoimg {
+    height: 70px;
+}
+
+.points, .pointsbottom {
+    font-family: 'Lemon Days';
+    font-size: 3em;
+    color: var(--background);
+    letter-spacing: 3px;
+}
+
+.points {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* Le footer */
+
+footer {
+    background-color: var(--footer);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.pointsbottom {
+    transform: rotateX(-180deg);
+}
+
+
+.contactinfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mail {
+    color: var(--footer);
+    font-family: 'MADE Evolve sans Regular';
+    text-decoration: none;
+    background-color: var(--button);
+    padding: 15px 50px;
+    border-radius: 10px;
+    
+}
+
+.sns svg {
+    padding: 5px;
+    fill: var(--header);
+}
+
+.sns rect {
+    fill: var(--header);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------------- */
+
+/* WELCOME PAGE CAKE DAY */
+
+
+/* Le titre Welcome to Cake Day */
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Le bloc pour choisir le cake du jour */
+
+.choosecake {
+    padding: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-style: solid;
+    border-color: var(--button);
+    border-width: 5px;
+    border-radius: 17px;
+    
+    position: relative;
+    
+}
+
+.welcomepagebutton, .datebutton, .anotherdaybutton {
+    text-transform: uppercase;
+    background-color: var(--button);
+}
+
+.welcomepagebutton, .datebutton {
+    font-size: 1.7em;
+    padding: 15px 45px;
+    border-radius: 17px;
+}
+
+.welcomepagebutton {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 2.5px));
+}
+
+.cakes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+/* Les images de cakes */
+
+.cake {
+    flex-basis: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cakes img {
+    width: 96px;
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* JOURNALING PAGE */
+
+/*Organisation de la page*/
+
+.repartition {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageseparation {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Date*/
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.todaydate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.todaydate svg {
+    width: 25px;
+    cursor: pointer;
+}
+
+.todaydate path {
+    fill: var(--button);
+}
+
+.anotherdaybutton {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--footer);
+    
+}
+
+
+/* MAIN*/
+
+/* Commun au main*/
+
+.mainblocs {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h4 {
+    background-color: var(--header);
+    border-radius: 10px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    color:var(--footer);
+    font-size: 1.4em;
+    
+    padding: 10px 30px;
+    
+    position: absolute;
+    top: 0;
+    right: 50px;
+    transform: translateY(calc(-50% - 2.5px));
+    
+}
+
+.todo, .myday, .foodtracker, .tomorrow {
+    position: relative;
+    
+    background-color: var(--maincontent);
+    padding: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    gap: 20px;
+    
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 5px;
+    border-radius: 17px;
+}
+
+textarea {
+    
+    /*Enlever le style de base*/
+    
+    border: none;
+    overflow: auto;
+    outline: none;
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    
+    resize: none; /*remove the resize handle on the bottom right*/
+    
+    /*Autre transfos*/
+    
+    width: 100%;
+    border-radius: 5px;
+    
+    font-family: 'MADE Evolve sans Light';
+    color: var(--footer);
+    font-size: 1.1em;
+}
+
+/* ------------- */ 
+
+
+/* To do*/
+
+.todocontent {
+    font-family: 'MADE Evolve sans Regular';
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+/* To do search bar*/
+
+.todosearchbar {
+    background-color: var(--textbackground);
+    border-radius: 5px;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.todosearchbar input {
+    padding: 20px;
+    width: 100%;
+    
+    color: var(--footer);
+    font-size: 1em;
+    font-family: 'MADE Evolve sans Light';
+    
+    border: none;
+    outline: none;
+    
+}
+
+.addbutton, .removebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--background);
+    cursor: pointer;
+}
+
+.addbutton svg, .removebutton svg {
+    height: 20px;
+}
+
+.addbutton path, .removebutton path {
+    fill: var(--footer);
+}
+
+/* To do items*/
+
+.todoitems {
+    background-color: var(--textbackground);
+    border-radius: 5px;
+    overflow: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    
+    height: 200px;
+}
+
+.todoitem {
+    display: flex;
+}
+
+.itemstitle {
+    color: var(--footer);
+    font-size: 1em;
+    font-family: 'MADE Evolve sans Light';
+    
+    flex-grow: 1;
+    padding: 20px;
+    
+    display: flex;
+    align-items: center;
+}
+
+/* My day*/
+
+textarea#writingtext {
+    height: 500px;
+}
+
+/* Foodtracker*/
+
+.eatingday {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.meal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    flex-basis: calc(50% - 20px);
+    position: relative;
+}
+
+.eatingtime {
+    background-color: var(--button);
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'MADE Evolve sans Medium';
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+    
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+textarea#writingsnack, textarea#writingbreakfast, textarea#writinglunch, textarea#writingdinner {
+    padding-top: 20px;
+    height: 160px;
+}
+
+
+/* Tomorrow*/
+
+textarea#writingtomorrow {
+    height: 50px;
+}
+
+/* ASIDES  */
+
+/* Commun aux blocs*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h5 {
+    
+    background-color: var(--asidecontent);
+    border-radius: 10px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    color:var(--background);
+    font-size: 1.2em;
+    
+    padding: 10px 30px;
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 2.5px));
+    
+    
+}
+
+.mood, .weather, .sleep, .energy, .notes {
+    
+    background-color: var(--background);
+    padding: 35px;
+    letter-spacing: 1px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 5px solid var(--asidecontent);
+    font-family: 'MADE Evolve sans Medium';
+    border-radius: 17px;
+    
+    position: relative;
+    
+}
+
+/* Mood*/
+
+.mooditems img {
+    width: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mooditems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selected {
+    background-color:var(--asidecontent);
+}
+
+/* Weather*/
+
+.weather svg {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.weatheritems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.selectedweather {
+    background-color:var(--textbackground);
+    border-color: var(--asidecontent) !important;
+}
+
+.weatheritems svg {
+    fill: var(--asidecontent)
+}
+
+/* Sleep*/
+
+.sleepitem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sleepitem p {
+    font-family: 'MADE Evolve sans Regular';
+    font-size: 1.1em;
+    color: var(--asidecontent);
+}
+
+.sleepitem input {
+    padding: 4px;
+    width: 30px;
+    font-size: 1.1em;
+    color: var(--asidecontent);
+    
+    border: none;
+    outline: none;
+}
+
+/* Energy*/
+
+.energyitems {   
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.energyitems svg {
+    width: 32px;
+    stroke: var(--asidecontent);
+    fill: var(--background);
+}
+
+.energyselected path {
+    fill:var(--asidecontent);
+}
+
+/* Drink*/
+
+.drink, .side {
+    display: flex;
+    justify-content: center;
+}
+
+.drink img {
+    height: 250px;
+}
+
+.side img {
+    height: 200px;
+}
+
+
+
+/* Notes*/
+
+.notes {
+    flex-grow: 1;
+}
+
+textarea#writingnotes {
+    height: 100%;
+    color: var(--footer);
+}
+
+
+/* Bas de page Piece of Cake */
+
+.finalquestion {
+    background-color: var(--maincontent);
+    border-radius: 17px;
+    border: solid var(--button) 5px;
+    
+    color: var(--background);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+
+.question, .answer p {
+    background-color: var(--header);
+    
+    color: var(--textbackground);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    border-radius: 17px;
+}
+
+.question {
+    padding: 20px 40px;
+    font-size: 1.4em;
+    
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 2.5px))
+}
+
+.answer {  
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 60px;
+    cursor: pointer;
+}
+
+.answer img {
+    flex-basis: 80px;
+}
+
+.answer p {
+    padding: 15px 30px;   
+    font-size: 1.4em;
+}
+
+.yes, .no {
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.selectedquestion {
+    background-color:var(--textbackground);
+}
+
+/* Save */
+
+.savebutton {
+    background-color: var(--header);
+
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding: 20px 70px;
+    border-radius: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    text-transform: uppercase;
+    color:var(--footer);
+
+    cursor: pointer;
+}
+
+
+/* Choose a color */
+
+.themes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--footer);
+}
+
+.colors {
+    display: flex;
+    justify-content:flex-start;
+    gap: 10px;
+}
+
+.colors img {
+    border-radius: 5px;
+    width: 30px;
+}
+
+
+/* -------------------------- CALENDAR PAGE -------------------------------- */
+
+.calendar_whole {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 80px 80px 80px;
+    
+    border-style: solid;
+    border-color: var(--button);
+    border-width: 5px;
+    border-radius: 17px;
+    
+    position: relative;
+}
+
+.wrapper {
+  padding-top: 20px;
+}
+
+/* Mois en cours et flèches*/
+
+.calendar_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.current_date {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.calendar_header img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Jours de la semaine et flèches*/
+
+.calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
+    position: relative;
+}
+
+/* Jours de la semaine */
+
+.calendar .weeks {
+    background-color: var(--maincontent);
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+.calendar .weeks li {
+    font-size: 1.2em;
+}
+
+/* Dates */
+
+.calendar .days {
+    background-color: white;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+.calendar .days li {
+    font-family: 'MADE Evolve sans Regular';
+    padding: 25px 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 17px;
+    z-index: -1;
+}
+
+.days li:hover::before{
+    background-color: var(--maincontent)
+}
+
+.days li.active::before{
+    background: var(--header);
+}
+
+.inactive {
+    color: var(--asidecontent);
+}
+
+.active {
+    color: var(--background);
+}
+
+/* ---------------------- DISABLED ------------------------ */
+
+body.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+
+
+/* ---------------------- RESPONSIVE ------------------------ */
+
+
+/*--------------------------------------- RESPONSIVE TABLETTES ----------------------------------*/
+
+/* ----------------------------------------------
+
+
+@media screen and (max-width:900px) {
+    
+    /* GENERAL 
+    
+    /* Le corps de la page
+    
+    body {
+        height: 100vh;
+        justify-content: space-between
+        
+    }
+    
+    main {
+        justify-content: stretch;
+    }
+    
+    .container {
+        width: 550px;
+        margin: auto;
+    }
+    
+    
+    /* Header
+    
+    header {
+        padding: 10px 0;
+        justify-content: center; 
+    }
+    
+    .logo {   
+        gap: 20px;
+        padding-left: 0px;   
+    }
+    
+    .logoimg {
+        height: 50px;
+    }
+    
+    .points, .pointsbottom {
+        display: none; 
+    }
+    
+    
+    /* Le footer
+    
+    footer {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .mail {
+        padding: 15px 30px;
+        
+    }
+    
+    .sns img {
+        width: 40px;
+    }
+    
+    
+    /* ----------------------------------------------
+    
+    /* WELCOME PAGE CAKE DAY
+    
+    
+    /* Le titre Welcome to Cake Day
+    
+    h3 {
+        padding: 10px 0 20px 0;
+    }
+    
+    /* Le bloc pour choisir le cake du jour
+    
+    .choosecake {
+        padding: 60px 0;
+    }
+    
+    .welcomepagebutton, .datebutton {
+        font-size: 1.4em;
+        padding: 15px 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .cakes {
+        row-gap: 0;
+        gap: 40px;
+    }
+    
+    
+    /* --------- JOURNALING PAGE ---------
+    
+    /*Organisation de la page
+    
+    .pageseparation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    /* MAIN
+    
+    h4 {
+        font-size: 1.2em;
+        
+    }
+    
+    .mainblocs {
+        gap: 50px
+    }
+    
+    aside {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 10px;
+    }
+    
+    .sleep {
+        padding-left: 50px ;
+        padding-right: 50px;
+    }
+    
+    .drink {
+        display: none;
+    }
+    
+    /* Bas de page Piece of Cake
+    
+    
+    .finalquestion {
+        padding: 30px;
+    }
+    
+    .question, .answer p {
+        letter-spacing: 1px;  
+    }
+    
+    .question {
+        padding: 15px 20px;
+        font-size: 1.2em;
+        border-radius: 15px;
+        
+        white-space: nowrap;
+    }
+    
+    .answer {
+        gap: 40px;
+        padding: 30px 20px;
+    }
+    
+    .answer img {
+        width: 60px;
+    }
+    
+    .answer p {
+        padding: 15px 30px;   
+        font-size: 1.2em;
+    }
+    
+    .yes, .no {
+        gap: 10px;
+    }
+    
+}
+
+---------------------------------------------- */
+
+
+
+/* TELEPHONE */
+
+@media screen and (max-width:500px) {
+    
+    /* GENERAL */ 
+    
+    /* Le corps de la page */
+    
+    body {
+        gap: 50px;
+    }
+    
+    main {
+        gap: 50px;
+    }
+    
+    .container {
+        width: 320px;
+        margin: auto;
+    }
+    
+    
+    /* Header */
+    
+    header {
+        padding: 10px 0;
+        justify-content: center; 
+    }
+    
+    .logo {   
+        gap: 20px;
+        padding-left: 0px;   
+    }
+    
+    .logoimg {
+        height: 50px;
+    }
+    
+    .points, .pointsbottom {
+        display: none; 
+    }
+    
+    
+    /* Le footer */
+    
+    footer {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .mail {
+        padding: 15px 30px;
+        
+    }
+    
+    .sns img {
+        width: 40px;
+    }
+    
+    
+    /* ---------------------------------------------- */
+    
+    /* WELCOME PAGE CAKE DAY */
+    
+    
+    /* Le titre Welcome to Cake Day */
+    
+    h3 {
+        padding: 10px 0 20px 0;
+    }
+    
+    /* Le bloc pour choisir le cake du jour */
+    
+    .choosecake {
+        padding: 60px 0;
+    }
+    
+    .welcomepagebutton, .datebutton {
+        font-size: 1.2em;
+        padding: 15px 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .cakes {
+        row-gap: 0;
+        gap: 40px;
+    }
+    
+    
+    /* --------- JOURNALING PAGE --------- */
+    
+    /*Organisation de la page*/
+    
+    .pageseparation {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    /* Date*/
+    
+    .date {
+        gap: 10px;
+    }
+    
+    .todaydate {
+        gap: 15px;
+    }
+    
+    .anotherdaybutton {
+        font-size: 0.8em;
+        padding: 10px 15px; 
+    }
+    
+    
+    /* MAIN*/
+    
+    /* Commun au main*/
+    
+    h4 {
+        font-size: 1.2em;  
+        padding: 10px 30px;
+        white-space: nowrap;  
+        
+        right: 50%;
+        transform: translate(50%, calc(-50% - 2.5px));
+        
+    }
+    
+    .mainblocs {
+        gap: 50px
+    }
+    
+    aside {
+        gap: 50px;
+    }
+    
+    /* My day*/
+    
+    textarea#writingtext {
+        height: 400px;
+    }
+    
+    /* Foodtracker*/
+    
+    .eatingday {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    
+    .eatingtime {
+        letter-spacing: 0.5px;
+        font-size: 1em;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    textarea#writingsnack, textarea#writingbreakfast, textarea#writinglunch, textarea#writingdinner {
+        height: 120px;
+    }
+    
+    
+    /* Tomorrow*/
+    
+    textarea#writingtomorrow {
+        height: 50px;
+    }
+    
+    /* Bas de page Piece of Cake */
+    
+    .finalquestion {
+        padding: 30px;
+    }
+    
+    .question, .answer p {
+        letter-spacing: 1px;  
+    }
+    
+    .question {
+        padding: 15px 20px;
+        font-size: 1em;
+        border-radius: 15px;
+        
+        white-space: nowrap;
+    }
+    
+    .answer {
+        gap: 40px;
+        padding: 30px 20px;
+    }
+    
+    .answer img {
+        width: 60px;
+    }
+    
+    .answer p {
+        padding: 15px 30px;   
+        font-size: 1.2em;
+    }
+    
+    .yes, .no {
+        gap: 10px;
+    }
+    
+    
+}
+
+/* JOURNALING PAGE
+
+
+main {
+    transform: scale(0.8);
+    margin-top: -150px;
+}
+
+
+
+/* Date */
+
+/* ANCIENNE VERSION AVEC LES BONNES MESURES
+
+.date {
+    margin: 100px 70px;
+    padding: 17px 70px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todaydate {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.todaydate img {
+    width: 35px;
+}
+
+.anotherdaybutton {
+    font-size: 1em;
+    margin-top: 20px;
+    padding: 8px 25px;
+    border-radius: 10px;
+    
+}
+
+/*Organisation de la page en deux blocs
+
+.pageseparation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* MAIN
+
+/* Commun au main
+
+h4 {
+    background-color: var(--header);
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    margin-left: 340px;
+    
+    text-transform: uppercase;
+    color:var(--footer);
+    font-size: 1.7em;
+    
+    padding: 10px 40px;
+    margin-top: -45px;
+    
+}
+
+.todo, .myday, .foodtracker, .tomorrow {
+    background-color: var(--maincontent);
+    width: 500px;
+    margin: 100px 70px 50px 0px;
+    padding: 17px 70px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 5px;
+    border-radius: 17px;
+}
+
+textarea {
+    
+    /*Enlever le style de base
+    
+    border: none;
+    overflow: auto;
+    outline: none;
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    
+    resize: none; /*remove the resize handle on the bottom right*/
+    
+    /*Autre transfos
+    
+    width: 520px;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+    font-family: 'MADE Evolve sans Light';
+    color: var(--footer);
+    font-size: 1.4em;
+}
+
+
+
+
+/* To do
+
+.todo {
+    height: 350px;
+}
+
+.todocontent {
+    width: 520px;
+    height: 300px;
+    margin-top: 30px;
+    
+    font-family: 'MADE Evolve sans Regular';
+    
+}
+
+/* To do search bar
+
+.todosearchbar {
+    background-color: var(--textbackground);
+    height: 50px;
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todosearchbar p {
+    padding-left: 20px;
+    color: var(--asidecontent);
+    font-size: 1.2em;
+    font-family: 'MADE Evolve sans Light';
+}
+
+.addbutton img, .removebutton img {
+    height: 20px;
+    padding-right: 15px;
+    display: flex;
+    align-content: center;
+}
+
+/* To do items
+
+.todoitems {
+    background-color: var(--textbackground);
+    border-radius: 5px;
+    
+    height: 225px;
+    margin-top: 15px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemstitle, .removebutton {
+    padding-top: 30px
+}
+
+.itemstitle {
+    padding-left: 20px;
+    color: var(--footer);
+    font-size: 1.2em;
+    font-family: 'MADE Evolve sans Light';
+}
+
+/* My day
+
+.myday {
+    height: 670px;
+}
+
+textarea#writingtext {
+    height: 610px;
+}
+
+/* Foodtracker
+
+/* Toute la section
+
+.foodtracker {
+    height: 550px;
+}
+
+/* Titre
+
+.foodtrackertitle {
+    width: 220px;
+    margin-left: 220px;
+}
+
+/* Les eating items
+
+.eatingday {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.breakfast, .lunch, .dinner, .snack {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.eatingtime {
+    background-color: var(--button);
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 3px;
+    
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'MADE Evolve sans Medium';
+    letter-spacing: 0.5px;
+}
+
+textarea#writingsnack, textarea#writingbreakfast, textarea#writinglunch, textarea#writingdinner {
+    height: 200px;
+    width: 230px;
+    margin-top: 15px;
+}
+
+
+/* Tomorrow
+
+.tomorrow {
+    height: 120px;
+}
+
+.tomorrowtitle {
+    width: 150px;
+    margin-right: 50px;
+}
+
+textarea#writingtomorrow {
+    height: 60px;
+}
+
+/* ASIDES 
+
+/* Commun aux blocs
+
+h5 {
+    
+    background-color: var(--asidecontent);
+    border-radius: 10px;
+    width: 90px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    color:var(--background);
+    font-size: 1.5em;
+    
+    padding: 10px 40px;
+    margin-top: -45px;
+    
+}
+
+.mood, .weather, .sleep, .energy, .notes {
+    
+    background-color: var(--background);
+    width: 200px;
+    margin: 82px 0px 50px 0px;
+    padding: 17px 70px;
+    letter-spacing: 1px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-style: solid;
+    border-color: var(--asidecontent);
+    font-family: 'MADE Evolve sans Medium';
+    border-width: 5px;
+    border-radius: 17px;
+    
+}
+
+/* Mood
+
+.mood {
+    margin-top: 100px;
+}
+
+.mooditems {
+    display: flex;
+    flex-direction: column;
+}
+
+.mooditems1, .mooditems2, .mooditems3 {
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+.mooditems3 {
+    margin-bottom: 30px;
+}
+
+/* Weather
+
+.weathertitle {
+    width: 120px;
+}
+
+.weatheritems1, .weatheritems2, .weatheritems3 {
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 45px;
+    margin-top: 30px;
+}
+
+.weatheritems3 {
+    margin-bottom: 20px;
+}
+
+/* Sleep
+
+.sleepitem {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sleepitem p {
+    font-family: 'MADE Evolve sans Regular';
+    font-size: 1.4em;
+    color: var(--asidecontent);
+}
+
+textarea#writingsleep {
+    height: 25px;
+    padding: 5px;
+    width: 25px;
+    margin: 0 7px;
+    font-size: 1.4em;
+    color: var(--asidecontent);
+}
+
+/* Energy
+
+.energyitems {
+    
+    height: 70px;
+    width: 250px;
+    margin-top: 15px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.energyitems img {
+    width: 40px;
+    gap: 10px;
+}
+
+/* Drink
+
+.drink {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.drink img {
+    height: 400px;
+}
+
+/* Notes
+
+.notes {
+    padding-bottom: 40px;
+}
+
+textarea#writingnotes {
+    height: 400px;
+    width: 230px;
+}
+
+FIN DE L'ANCIENNE VERSION */
+
+
+
+
+
