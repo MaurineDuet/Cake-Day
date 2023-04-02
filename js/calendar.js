@@ -1,3 +1,5 @@
+import { dateToURLFormat } from "./functions.js";
+
 const currentDate = document.querySelector("[data-calendar-currentdate]");
 const dayTag = document.querySelector("[data-calendar-daytag]");
 const prevNextIcon = document.querySelectorAll("[data-calendar-icons]")
@@ -17,16 +19,28 @@ if (currentDate) {
         let liTag =""
         
         for (let i = firstDayofMonth; i > 0; i--) {
-            liTag += `<li class=inactive>${lastDateofLastMonth - i + 1}</li>`
+            liTag += `<li class=inactive>
+            <a href="journaling_page.html?date=${dateToURLFormat(new Date(currYear, currMonth, lastDateofLastMonth - i + 1))}">
+            ${lastDateofLastMonth - i + 1}
+            </a>
+            </li>`
         }
         
         for (let i = 1; i <= lastDateofMonth; i++) {
             let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : ""
-            liTag += `<li class="${isToday}">${i}</li>`
+            liTag += `<li class="${isToday}">
+            <a href="journaling_page.html?date=${dateToURLFormat(new Date(currYear, currMonth, i))}">
+            ${i}
+            </a>
+            </li>`
         }
         
         for (let i = lastDayofMonth; i < 6; i++) {
-            liTag += `<li class=inactive>${i - lastDayofMonth + 1}</li>`
+            liTag += `<li class=inactive>
+            <a href="journaling_page.html?date=${dateToURLFormat(new Date(currYear, currMonth, i - lastDayofMonth + 1))}">
+            ${i - lastDayofMonth + 1}
+            </a>
+            </li>`
         }
         
         currentDate.innerText = `${months[currMonth]} ${currYear}`

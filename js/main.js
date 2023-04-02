@@ -16,3 +16,7 @@ import "./calendar.js"
 
 import "./storage.js"
 
+import "./cakeGenerator.js"
+
+import "./outStorage.js"
+
