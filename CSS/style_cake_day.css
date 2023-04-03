@@ -166,6 +166,11 @@ main {
     margin: auto;
 }
 
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+
 
 /* Header */
 
@@ -376,6 +381,11 @@ h3 {
     border-radius: 10px;
     color: var(--footer);
     
+}
+
+#previous, #nextday {
+    border:none;
+    background-color: transparent;
 }
 
 
@@ -747,8 +757,6 @@ h5 {
     height: 200px;
 }
 
-
-
 /* Notes*/
 
 .notes {
@@ -983,7 +991,7 @@ textarea#writingnotes {
 
 /* ---------------------- DISABLED ------------------------ */
 
-body.disabled {
+.disabled {
     pointer-events: none;
     opacity: 0.4;
 }
@@ -1347,6 +1355,7 @@ body.disabled {
     
     .finalquestion {
         padding: 30px;
+        box-sizing: border-box;
     }
     
     .question, .answer p {
@@ -1362,12 +1371,13 @@ body.disabled {
     }
     
     .answer {
-        gap: 40px;
+        gap: 20px;
         padding: 30px 20px;
     }
     
     .answer img {
         width: 60px;
+        object-fit: contain;
     }
     
     .answer p {
@@ -1377,6 +1387,7 @@ body.disabled {
     
     .yes, .no {
         gap: 10px;
+        padding: 20px 15px;
     }
     
     
