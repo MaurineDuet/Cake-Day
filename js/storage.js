@@ -47,10 +47,12 @@ if (saveButton) {
         const question = document.querySelector("[data-storage-question]")
         data["question"] = question.value
 
-        //data["date"] = new Date()
+        //data["date"] = new Date()C'esty
 
         const params = new URLSearchParams(location.search)
-
+        const color = params.get("theme")
+        data["color"] = color
+    
         const jsonName = params.get("date")
 
         localStorage.setItem(jsonName, JSON.stringify(data))

@@ -15,4 +15,4 @@ if (sideImage) {
     sideImage.src = `../Img/side_${color}.png`
 }
 
-localStorage.setItem("theme", color)
+//localStorage.setItem("theme", color)

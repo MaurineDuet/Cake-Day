@@ -20,3 +20,5 @@ import "./cakeGenerator.js"
 
 import "./outStorage.js"
 
+import "./themeAccordingToDate.js"
+
