@@ -877,6 +877,13 @@ textarea#writingnotes {
     width: 30px;
 }
 
+.color_button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 
 /* -------------------------- CALENDAR PAGE -------------------------------- */
 

@@ -20,9 +20,11 @@ function disableElements () {
     const journal = document.querySelector(".pageseparation")
     const question = document.querySelector(".finalquestion")
     const save = document.querySelector(".savebutton")
+    const colors = document.querySelector(".colors")
     journal.classList.add("disabled")
     question.classList.add("disabled")
     save.classList.add("disabled")
+    colors.classList.add("disabled")
 }
 
 //Futur
