@@ -7,12 +7,12 @@ document.body.setAttribute("theme", color)
 
 const drinkImage = document.querySelector("[data-drink-img]")
 if (drinkImage) {
-    drinkImage.src = `../Cake-Day/Img/drink_${color}.png`
+    drinkImage.src = `./Cake-Day/Img/drink_${color}.png`
 }
 
 const sideImage = document.querySelector("[data-side-img]")
 if (sideImage) {
-    sideImage.src = `../Cake-Day/Img/side_${color}.png`
+    sideImage.src = `./Cake-Day/Img/side_${color}.png`
 }
 
 //localStorage.setItem("theme", color)
